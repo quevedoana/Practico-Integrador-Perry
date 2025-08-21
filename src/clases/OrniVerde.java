@@ -4,7 +4,7 @@ package clases;
 import java.util.Scanner;
 
 
-public class OrniVerde implements MamaPata{
+public class OrniVerde extends Castor implements MamaPata{
 
     @Override
     public void tocarOrgano() {
@@ -15,7 +15,8 @@ public class OrniVerde implements MamaPata{
         System.out.println("Fa-Sol-La-Si");
     }
     public void tocarGuitorgan(){
-        
+        tocarOrgano();
+        System.out.println("cuac cuaac…!");
     }
     
 }
