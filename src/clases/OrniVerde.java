@@ -15,6 +15,7 @@ public class OrniVerde extends Castor implements MamaPata{
         System.out.println("Fa-Sol-La-Si");
     }
     public void tocarGuitorgan(){
+        tocarGuitarra();
         tocarOrgano();
         System.out.println("cuac cuaac…!");
     }
