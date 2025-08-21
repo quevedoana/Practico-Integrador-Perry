@@ -44,5 +44,9 @@ public class Castor {
             cont++;
         }
         
+        
+    }
+    public void nadar(){
+        System.out.println("Esta nadando a una velocidad de "+velocidad+" km/h");
     }
 }
