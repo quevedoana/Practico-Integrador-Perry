@@ -5,6 +5,8 @@
  */
 package integrador_perry;
 
+import clases.*;
+
 /**
  *
  * @author AnaQuevedo
