@@ -7,8 +7,8 @@ package clases;
 
 /**
  *
- * @author Toto
+ * @author esteb
  */
-public class pata {
+public interface Pata {
     
 }
