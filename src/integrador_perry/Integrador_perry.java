@@ -111,7 +111,8 @@ public class Integrador_perry {
          OrniAzul blui = new OrniAzul(aux6,aux7,aux8);
          
          //Arreglo de ornitorrincos
-        try{
+        
+         try{
         Castor[] arregloOrnis = new Castor[3];
         arregloOrnis[0]=ov;
         arregloOrnis[1]=blue;
