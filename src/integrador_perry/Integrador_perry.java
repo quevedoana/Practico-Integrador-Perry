@@ -47,7 +47,7 @@ public class Integrador_perry {
                 System.out.println("La velocidad no puede ser negativa ni superior a 8");
             }
         } while (aux2 < 0 || aux2 > 8);
-        OrniVerde Cande = new OrniVerde(aux1, aux2);
+        OrniVerde Esteban = new OrniVerde(aux1, aux2);
 
         //bucles para crear a blue
         System.out.println("Creando a blue");
@@ -102,13 +102,31 @@ public class Integrador_perry {
             }
         } while (aux3 < 0 || aux3 > 8);
         OrniAzul blui = new OrniAzul(aux1, aux2, aux3);
+        //ejecutando habilidades
+        
+        //orniverde
+        System.out.println("Esteban muestra sus habilidades para nadar y tocar instrumentos");
+        Esteban.nadar();
+        Esteban.tocarGuitarra();
+        Esteban.tocarOrgano();
+        Esteban.tocarGuitorgan();
+        
+        //blue
+        System.out.println("blue muestra sus habilidades para tocar la guitarra y nadar con propulsion ");
+        blue.tocarGuitarra();
+        blue.nadar();
+
+        //blui
+        System.out.println("blui muestra sus habilidades para tocar la guitarra y nadar con propulsion ");
+        blui.tocarGuitarra();
+        blui.nadar();
 
         //Arreglo de ornitorrincos
-        Castor[] arregloOrnis = new Castor[3];
+        Castor[] ornitohermanos = new Castor[3];
         try {           
-            arregloOrnis[0] = Cande;
-            arregloOrnis[1] = blue;
-            arregloOrnis[2] = blui;
+            ornitohermanos[0] = Esteban;
+            ornitohermanos[1] = blue;
+            ornitohermanos[2] = blui;
         } catch (ArrayIndexOutOfBoundsException a) {
             System.out.println("Indice de arreglo no valido");
         } catch (Exception e) {
@@ -117,9 +135,9 @@ public class Integrador_perry {
             System.out.println("Los ornitohermanos estan juntos al fin");
         }
 
-        for (i = 0; i < arregloOrnis.length; i++) {
-            if(arregloOrnis[i] instanceof OrniAzul){
-                OrniAzul aux = (OrniAzul)arregloOrnis[i];
+        for (i = 0; i < ornitohermanos.length; i++) {
+            if(ornitohermanos[i] instanceof OrniAzul){
+                OrniAzul aux = (OrniAzul)ornitohermanos[i];
                 nadadores.add(aux);   
                 System.out.println(aux);
             }          
