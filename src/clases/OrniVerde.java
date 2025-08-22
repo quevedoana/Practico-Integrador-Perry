@@ -6,6 +6,11 @@ import java.util.Scanner;
 
 public class OrniVerde extends Castor implements MamaPata{
 
+    public OrniVerde(double cola, double velocidad) {
+        super(cola, velocidad);
+    }
+    
+
     @Override
     public void tocarOrgano() {
         Scanner sc = new Scanner(System.in);
